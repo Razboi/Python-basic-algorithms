@@ -7,8 +7,8 @@ be included in the string.
 
 
 def alphabet_soup(sen):
-    # delete the whitespaces (replace with empty) and sort
-    return sorted(sen.replace(" ", ""))
+    # delete the whitespaces (replace with empty), sort and join all list elements to an empty string
+    return "".join(sorted(sen.replace(" ", "")))
 
 
 print(alphabet_soup("this is a test"))
