@@ -10,8 +10,10 @@ return this modified string.
 def letter_changes(sen):
     new_sen = ""
     for i in sen:
+        # if the word is z add A to the new str
         if i == "z":
             new_sen += "A"
+        # set the letter to the next letter in the alphabet. If its a vowel capitalize it
         else:
             letter = chr(ord(i) + 1)
             if letter in ["a", "e", "i", "o", "u"]:
